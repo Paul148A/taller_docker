@@ -1,8 +1,65 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
+  color: #333;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #1f4e79;
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #1f4e79;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #163b5d;
 }
 
 #result {
-  margin-top: 20px;
+  margin-top: 30px;
+  background-color: #ffffffcc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#result h2 {
+  color: #1f4e79;
+  margin-bottom: 10px;
+}
+
+#result ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#result li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
 }
